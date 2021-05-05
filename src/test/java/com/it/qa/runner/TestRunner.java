@@ -7,11 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-features = { "D:\\Automation\\qaengineer\\src\\test\\features" },
+features = { "/home/saradhi/Desktop/Learn/SampleProject/qaengineer/src/test/features" },
 glue = {"com.it.qa.stepdefenitions" },
 plugin = { "pretty","html:test-output" }, 
-tags = "@Smoke", 
+tags = "@Smoke",
 monochrome = true,
+publish = true,
 dryRun = true)
 public class TestRunner {
 

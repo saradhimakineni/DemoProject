@@ -7,9 +7,9 @@ public class LoginPageObject {
 	public String url = "https://www.exercise1.com/values";
 
 	public WebDriver launchApplication(WebDriver driver) {
-		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/home/saradhi/Desktop/chrome");
 		driver = new ChromeDriver();
-		driver.get(url);
+		driver.get("https://www.google.co.in/");
 		return driver;
 	}
 
